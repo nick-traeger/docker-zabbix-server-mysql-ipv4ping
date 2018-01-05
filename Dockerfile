@@ -1,2 +1,2 @@
 FROM zabbix/zabbix-server-mysql:latest
-RUN rm $(which ping6)
+RUN find / -iname "*ping6*" -delete
